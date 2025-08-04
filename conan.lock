@@ -1,0 +1,50 @@
+{
+    "graph_lock": {
+        "nodes": {
+            "0": {
+                "ref": "myapp/1.0@",
+                "context": "host",
+                "requires": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            "1": {
+                "ref": "openssl/1.1.1@_/_",
+                "context": "host",
+                "package_id": "da606cf731e334f620bf96c6e3d7d371bb2c9e1a",
+                "prev": "0",
+                "requires": [
+                    "4"
+                ]
+            },
+            "2": {
+                "ref": "zlib/1.2.8@_/_",
+                "context": "host", 
+                "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                "prev": "0"
+            },
+            "3": {
+                "ref": "poco/1.9.0@_/_",
+                "context": "host",
+                "package_id": "2c3c7e0c4f1a2b3d4e5f6a7b8c9d0e1f2a3b4c5d",
+                "prev": "0",
+                "requires": [
+                    "1",
+                    "2"
+                ]
+            },
+            "4": {
+                "ref": "ca-certificates/1.0@_/_",
+                "context": "host",
+                "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                "prev": "1"
+            }
+        },
+        "revisions_enabled": false
+    },
+    "version": "0.4",
+    "profile_host": "[settings]\nos=Linux\nos_build=Linux\narch=x86_64\narch_build=x86_64\ncompiler=gcc\ncompiler.version=9\ncompiler.libcxx=libstdc++11\nbuild_type=Release\n[options]\n[build_requires]\n[env]",
+    "profile_build": "[settings]\nos=Linux\nos_build=Linux\narch=x86_64\narch_build=x86_64\ncompiler=gcc\ncompiler.version=9\ncompiler.libcxx=libstdc++11\nbuild_type=Release\n[options]\n[build_requires]\n[env]"
+}
